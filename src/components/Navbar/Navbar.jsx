@@ -36,8 +36,8 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href="/admin" className="hover:text-[#2AB7E8] transition">
-              Admin
+            <Link href="/add-destination" className="hover:text-[#2AB7E8] transition">
+              Add Destination
             </Link>
           </li>
         </ul>
