@@ -10,6 +10,7 @@ import {
   FieldError,
   TextArea,
   Button,
+  toast,
 } from "@heroui/react";
 
 
@@ -25,7 +26,7 @@ const AddDestination = ({addDestination}) => {
        
        const destination = await addDestination(formData)
        
-       
+       toast.success("Successfully Add a New Destination ")
 
      
    };
