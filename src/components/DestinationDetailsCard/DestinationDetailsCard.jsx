@@ -2,9 +2,11 @@ import { CalendarDays, Check, MapPin, Pencil, Star, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import EditDestination from "../EditDestination/EditDestination";
+import DeleteAlert from "../DeleteAlert/DeleteAlert";
 
 const DestinationDetailsCard = ({ destinationDetails }) => {
   const {
+    _id,
     country,
     imageUrl,
     duration,
@@ -27,14 +29,13 @@ const DestinationDetailsCard = ({ destinationDetails }) => {
         </Link>
 
         <div className="flex gap-3">
-        
-            <EditDestination destinationDetails={destinationDetails} />
-          
+          <EditDestination destinationDetails={destinationDetails} />
 
-          <button className="border border-red-300 text-red-500 px-6 py-2 text-sm flex items-center gap-2 hover:bg-red-50 transition">
+          <DeleteAlert id={_id} />
+          {/* <button className="border border-red-300 text-red-500 px-6 py-2 text-sm flex items-center gap-2 hover:bg-red-50 transition">
             <X size={16} />
             Cancel
-          </button>
+          </button> */}
         </div>
       </div>
 
