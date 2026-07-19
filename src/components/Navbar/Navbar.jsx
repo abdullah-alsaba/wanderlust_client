@@ -19,7 +19,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href="/destinations"
+              href="/destination"
               className="hover:text-[#2AB7E8] transition"
             >
               Destinations

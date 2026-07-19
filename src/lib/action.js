@@ -34,3 +34,13 @@ export const getDestinationData = async () => {
     const data = await res.json()
     return data 
 }
+
+
+export const getDestinationDataById = async (id) => {
+    const res = await fetch(
+      `http://localhost:7000/destination/${id}`,
+    );
+    const data = await res.json()
+  
+    return data 
+}
