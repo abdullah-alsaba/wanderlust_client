@@ -1,6 +1,7 @@
 import { CalendarDays, Check, MapPin, Pencil, Star, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import EditDestination from "../EditDestination/EditDestination";
 
 const DestinationDetailsCard = ({ destinationDetails }) => {
   const {
@@ -26,10 +27,9 @@ const DestinationDetailsCard = ({ destinationDetails }) => {
         </Link>
 
         <div className="flex gap-3">
-          <button className="border px-6 py-2 text-sm flex items-center gap-2 hover:bg-gray-100 transition">
-            <Pencil size={16} />
-            Edit
-          </button>
+        
+            <EditDestination destinationDetails={destinationDetails} />
+          
 
           <button className="border border-red-300 text-red-500 px-6 py-2 text-sm flex items-center gap-2 hover:bg-red-50 transition">
             <X size={16} />

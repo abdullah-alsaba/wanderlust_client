@@ -44,3 +44,4 @@ export const getDestinationDataById = async (id) => {
   
     return data 
 }
+
