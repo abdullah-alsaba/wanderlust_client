@@ -25,7 +25,7 @@ const AddDestination = ({addDestination}) => {
        
        const destination = await addDestination(formData)
        
-       console.log(destination) 
+       
 
      
    };
